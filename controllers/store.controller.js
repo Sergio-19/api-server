@@ -62,7 +62,8 @@ class StoreController {
     //Тестовый роут
 
     async storeTest(req, res) {
-        res.json({"test": "Тестовый роут"})
+        let count = Math.random() * 1000
+        res.json({"test": "Тестовый роут", count})
     }
 
 }
