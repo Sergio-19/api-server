@@ -59,6 +59,12 @@ class StoreController {
         }
     }
 
+    //Тестовый роут
+
+    async storeTest(req, res) {
+        res.json({"test": "Тестовый роут"})
+    }
+
 }
 
 module.exports = new StoreController()
